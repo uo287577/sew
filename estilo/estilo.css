@@ -1,0 +1,16 @@
+/* Miguel Fernández Huerta UO287577 */
+
+/* Especifidad (0,0,1)*/
+body {font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; /* PROPIEDAD HEREDABLE */
+        background-color: #f4ebd0; /* color de fondo (background) | PROPIEDAD NO HEREDABLE */
+        color: #122620; /* color de primer plano (foreground) [color de texto] | PROPIEDAD HEREDABLE */}
+
+/* Especifidad (0,0,1) */
+header {background-color: #f4ebd0; /* color de fondo (background) | PROPIEDAD NO HEREDABLE */
+        /* color de primer plano (foreground) [color de texto] heredado de body. El validador muestra una advertencia sobre ello pero
+            ya ha sido comprobada, verificada y garantizada de que no genera efectos colaterales no deseados. */}
+
+/* Especifidad h1: (0,0,1) | nav: (0,0,1) */
+h1, nav {/* El validador muestra una advertencia de que falta por especificar un color de fondo, aunque no hereda la propiedad, la advertencia
+            ya ha sido comprobada, verificada y garantizada de que no genera efectos colaterales no deseados. */ 
+        color: #122620; /* color de texto | PROPIEDAD HEREDABLE */}
