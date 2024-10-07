@@ -1,0 +1,39 @@
+/* Miguel Fernández Huerta UO287577 */
+
+/* Contraste comprobado: 
+        background-color: #f4ebd0
+        color: #122620
+
+        background-color:#D6AD60
+        color: #122620
+*/
+
+/* Especifidad (001)*/
+body {font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; /* PROPIEDAD HEREDABLE */
+        background-color: #f4ebd0; /* color de fondo (background) | PROPIEDAD NO HEREDABLE */
+        color: #122620; /* color de primer plano (foreground) [color de texto] | PROPIEDAD HEREDABLE */}
+
+/* Especifidad (001) */
+/*header {/* background-color: #f4ebd0; heredado de body | color de fondo (background) | PROPIEDAD NO HEREDABLE */
+        /* color: #122620; heredado de body }*/
+
+/* Especifidad (002) */
+header a {/* background-color: #f4ebd0; heredado de body */
+        /* color: #122620; heredado de body */
+        text-decoration-line: none; /* PROPIEDAD NO HEREDABLE */}
+
+/* Especifidad (002) */
+body > p {/* background-color: #f4ebd0; heredado de body */
+        /* color: #122620; heredado de body */
+        font-size: 0.9em; /* PROPIEDAD HEREDABLE */}
+
+/* Especifidad (013)*/
+main > section:last-child a {
+        /* background-color: #f4ebd0; heredado de body */
+        /* color: #122620; heredado de body */
+        font-size: 1.5em; /* PROPIEDAD HEREDABLE */
+}
+
+/* Especifidad: (002) */
+/*h1, nav {/* background-color: #f4ebd0; heredado de body */
+        /* color: #122620; heredado de body | color de texto | PROPIEDAD HEREDABLE }*/
