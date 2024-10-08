@@ -92,7 +92,7 @@ th, td {
         /* background-color: #f4ebd0; heredado de body */
         /* color: #122620; heredado de body */
         border: 1px solid black; /* Dibuja el borde de cada celda de la tabla */
-        padding: 10px; /* Espaciado interno */
+        padding: 5px; /* Espaciado interno */
 }
 
 /* Especifidad (001) */
