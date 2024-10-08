@@ -81,7 +81,7 @@ dl > dd {
 table {
         /* background-color: #f4ebd0; heredado de body */
         /* color: #122620; heredado de body */
-        width: 100%; /* Para que la tabla ocupe el 100% del ancho de la pantalla */
+        width: 90%; /* Para que la tabla ocupe el 100% del ancho de la pantalla */
         text-align: center; /* Situa el texto de cada celda de la tabla en el centro | PROPIEDAD HEREDABLE */
         border-collapse: collapse; /* Reducimos los bordes de la tabla a uno */
         border: 2px solid black; /* Dibuja el borde de la tabla */
