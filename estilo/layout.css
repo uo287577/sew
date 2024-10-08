@@ -10,10 +10,11 @@ header {
     align-items: baseline; /* Para alinear el texto de los contenidos del header entre ellos | PROPIEDAD NO HEREDABLE */
 }
 
-@media screen /* usar screen o all para que tambien sirva en navegadores de texto? */ and (max-width: 773px) {
+@media screen /* usar screen o all para que tambien sirva en navegadores de texto? */ and (max-width: 774px) {
     /* Especifidad (001) */
     header {
         flex-direction: column; /* La propiedad se está redefiniendo | PROPIEDAD NO HEREDABLE */
+        background-color: red;
     }
 }
 
