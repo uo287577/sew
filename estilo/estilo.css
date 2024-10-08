@@ -111,5 +111,5 @@ header > nav > a.active {
         /* background-color: #f4ebd0; heredado de body */
         color: #990000; /* PROPIEDAD HEREDABLE */
         font-weight: bold; /* PROPIEDAD HEREDABLE */
-        font-size: 1.1em; /* PROPIEDAD HEREDABLE */
+        font-size: 1.2em; /* PROPIEDAD HEREDABLE */
 }
