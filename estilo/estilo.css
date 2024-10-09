@@ -20,7 +20,7 @@ body {font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; /* PROPIEDAD HER
 header a {/* background-color: #f4ebd0; heredado de body */
         /* color: #122620; heredado de body */
         text-decoration-line: none; /* PROPIEDAD NO HEREDABLE */
-        padding: 0.5vw; /* PROPIEDAD NO HEREDABLE */
+        padding: 0.7vw; /* PROPIEDAD NO HEREDABLE */
 }
 
 /* Especifidad (002) */
