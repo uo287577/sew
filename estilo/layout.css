@@ -17,8 +17,8 @@ header {
     }
 
     /* Especifidad (002) */
-    header > nav {
+    /*header > nav {
         padding: 0 0.7vw; /* La propiedad se está redefiniendo en estilo.css | PROPIEDAD NO HEREDABLE */
-    }
+   /* }*/
 }
 
