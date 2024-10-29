@@ -1,0 +1,31 @@
+/* Miguel Fernández Huerta UO287577 */
+
+/* Especificidad (001) */
+section {
+    display: flex; /* Hacemos el contenedor header flexible para que se adapte a la pantalla | PROPIEDAD NO HEREDABLE */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+}
+
+/* Especificidad (002) */
+section > h2 {
+    width: 100%;
+}
+
+/* Especificidad (002) */
+section > article {
+    background-color: #00F5D0; /* color de fondo (background) | PROPIEDAD NO HEREDABLE */
+    color: #000000;
+    width: 20%; /* PROPIEDAD NO HEREDABLE */
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+/* Especificidad (003) */
+section > article > img {
+    width: 75%; /* PROPIEDAD NO HEREDABLE */
+    height: 50%;
+}
