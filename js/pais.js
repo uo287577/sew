@@ -70,7 +70,7 @@ class País
 }
 var pais = new País("España","Barcelona","1.655.956");
 pais.rellenarInformacionRestante();
-document.write(
+window.document.write(
     "<section>" +
     "<h3>Información principal</h3>" +
     "<p>Nombre del pais: "+pais.getNombrePais()+"</p>" +
@@ -83,16 +83,5 @@ document.write(
     "<section>" +
     "<h3>Coordenadas de la línea de meta del circuito</h3>"
 );
-
-/*document.write();
-document.write();
-document.write();
-document.write();
-document.write();
-document.write();
-document.write();
-document.write();
-document.write();
-document.write();*/
 pais.escribeCoordenadas();
-document.write("</section>");
+this.document.write("</section>");
