@@ -1,0 +1,175 @@
+/* Miguel Fernández Huerta UO287577 */
+
+/* Contraste comprobado: 
+        background-color: #f4ebd0
+        color: #122620
+
+        background-color:#D6AD60
+        color: #122620
+
+        background-color: #f4ebd0
+        color: #990000
+
+        background-color: #000000
+        color: #FFFFFFFF
+
+        background-color: #000000
+        color: #FF6B6B
+
+        background-color: #000000
+        color: #9494FF
+
+        background-color: #FFFFFF
+        color: #000000
+
+        background-color: #000000
+        color: #00F5D0
+*/
+
+/* Especificidad (001)*/
+body {
+        font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; /* PROPIEDAD HEREDABLE */
+        background-color: #000000; /* color de fondo (background) | PROPIEDAD NO HEREDABLE */
+        color: #FFFFFFFF; /* color de primer plano (foreground) [color de texto] | PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (001) */
+header {
+        background-color: #FFFFFF; /* PROPIEDAD NO HEREDABLE */
+        /*color: #FFFFFFFF; heredado de body */
+}
+
+/* Especificidad (002) */
+header a {
+        color: #000000; /* PROPIEDAD HEREDABLE */
+        text-decoration-line: none; /* PROPIEDAD NO HEREDABLE */
+        padding: 0.5vmin;
+        /*margin: 1vw; /* PROPIEDAD NO HEREDABLE */
+}
+
+/* Especificidad (002) */
+body > p {
+        /* color: #FFFFFFFF; heredado de body */
+        font-size: 0.9em; /* PROPIEDAD HEREDABLE */}
+
+@media screen and (max-width: 465px) {
+        /* Especifidad (002) */
+        body > p {
+                /* color: #FFFFFFFF; heredado de body */
+                display: none; /* PROPIEDAD NO HEREDABLE */
+        }
+}
+
+/* Especificidad (023) */
+main > section:last-child a:link {
+        color: #9494FF;
+}
+
+/* Especificidad (023)*/
+main > section:last-child a:hover {
+        color: #FF6B6B; /* Redefinimos la propiedad | PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (023) */
+main > section:last-child a:visited {
+        color: #00F5D0; /* Redefinimos la propiedad | PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (001) */
+ul {
+        /* color: #FFFFFFFF; heredado de body */
+        list-style: square; /* PROPIEDAD HEREDABLE */
+        font-weight: bold; /* PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (001) */
+ol {
+        /* color: #FFFFFFFF; heredado de body */
+        list-style: upper-roman; /* PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (002) */
+ul ol {
+        /* Selecciona la lista ordenada descendiente de la lista no ordenada */
+        /* color: #FFFFFFFF; heredado de body */
+        list-style: lower-latin; /* PROPIEDAD HEREDABLE */
+        font-weight: normal; /* PROPIEDAD HEREDABLE */
+        font-style: italic; /* PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (002) */
+dl > dt {
+        /* color: #FFFFFFFF; heredado de body */
+        font-weight: bold; /* PROPIEDAD HEREDABLE */       
+}
+
+/* Especificidad (002) */
+dl > dd {
+        /* color: #FFFFFFFF; heredado de body */
+        margin-bottom: 2em; /* PROPIEDAD NO HEREDABLE */
+}
+
+/* Especificidad (001) */
+table {
+        /* color: #FFFFFFFF; heredado de body */
+        width: 100%; /* Para que la tabla ocupe el 100% del ancho de la pantalla | PROPIEDAD HEREDABLE */
+        text-align: center; /* Situa el texto de cada celda de la tabla en el centro | PROPIEDAD HEREDABLE */
+        border-collapse: collapse; /* Reducimos los bordes de la tabla a uno | PROPIEDAD HEREDABLE */
+        border: 0.5vmin solid white; /* Dibuja el borde de la tabla | PROPIEDAD NO HEREDABLE */
+}
+
+/* Especificidad (002) */
+th, td {
+        /* color: #FFFFFFFF; heredado de body */
+        border: 0.25vmin solid white; /* Dibuja el borde de cada celda de la tabla | PROPIEDAD NO HEREDABLE */
+        padding: 1vmin; /* Espaciado interno de cada celda | PROPIEDAD NO HEREDABLE */
+}
+
+/* Especificidad (001) */
+video {
+        /* color: #FFFFFFFF; heredado de body */
+        width:100%; /* PROPIEDAD NO HEREDABLE */
+        height:auto; /* PROPIEDAD NO HEREDABLE */
+}
+
+/* Especificidad (013) */
+header > nav > a.active {
+        color: #990000; /* PROPIEDAD HEREDABLE */
+        font-weight: bold; /* PROPIEDAD HEREDABLE */
+        font-size: 1.2em; /* PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (003) */
+main h4 + p {
+        /* color: #FFFFFFFF; heredado de body */
+        font-weight: normal; /* PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (013) */
+main > nav a:link {
+        color: #9494FF; /* Redefinimos la propiedad | PROPIEDAD HEREDABLE */
+}
+    
+/* Especificidad (013)*/
+main > nav a:hover {
+        color: #FF6B6B; /* Redefinimos la propiedad | PROPIEDAD HEREDABLE */
+}
+    
+/* Especificidad (013) */
+main > nav a:visited {
+        color: #00F5D0; /* Redefinimos la propiedad | PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (002) */
+main > div {
+        /* color: #FFFFFFFF; heredado de body */
+        padding-top: 2vmin;
+        width: 100%;
+        height: 57vmin;
+}
+
+/* Especificidad (004) */
+main > div > div button {
+        height: 5vmin;
+        aspect-ratio: 1;
+}
