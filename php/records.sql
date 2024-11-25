@@ -1,0 +1,1 @@
+CREATE TABLE `records`.`registro` (`nombre` VARCHAR(30) NOT NULL , `apellidos` VARCHAR(30) NOT NULL , `nivel` VARCHAR(10) NOT NULL , `tiempo` FLOAT NOT NULL ) ENGINE = InnoDB;

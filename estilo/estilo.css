@@ -1,0 +1,218 @@
+/* Miguel Fernández Huerta UO287577 */
+
+/* Contraste comprobado: 
+        background-color: #f4ebd0
+        color: #122620
+
+        background-color:#D6AD60
+        color: #122620
+
+        background-color: #f4ebd0
+        color: #990000
+
+        background-color: #000000
+        color: #FFFFFFFF
+
+        background-color: #000000
+        color: #FF6B6B
+
+        background-color: #000000
+        color: #9494FF
+
+        background-color: #FFFFFF
+        color: #000000
+
+        background-color: #000000
+        color: #00F5D0
+*/
+
+/* Especificidad (001)*/
+body {
+        font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; /* PROPIEDAD HEREDABLE */
+        background-color: #000000; /* color de fondo (background) | PROPIEDAD NO HEREDABLE */
+        color: #FFFFFFFF; /* color de primer plano (foreground) [color de texto] | PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (001) */
+header {
+        background-color: #FFFFFF; /* PROPIEDAD NO HEREDABLE */
+        /*color: #FFFFFFFF; heredado de body */
+}
+
+/* Especificidad (002) */
+header a {
+        /*background-color: #000000; heredado de body */
+        color: #000000; /* PROPIEDAD HEREDABLE */
+        text-decoration-line: none; /* PROPIEDAD NO HEREDABLE */
+        padding: 0.5vmin;
+}
+
+/* Especificidad (002) */
+body > p {
+        /* color: #FFFFFFFF; heredado de body */
+        font-size: 0.9em; /* PROPIEDAD HEREDABLE */}
+
+@media screen and (max-width: 465px) {
+        /* Especifidad (002) */
+        body > p {
+                /* color: #FFFFFFFF; heredado de body */
+                display: none; /* PROPIEDAD NO HEREDABLE */
+        }
+}
+
+/* Especificidad (012) */
+main a:link {
+        /*background-color: #000000; heredado de body */
+        color: #9494FF;
+}
+
+/* Especificidad (012)*/
+main a:hover {
+        /*background-color: #000000; heredado de body */
+        color: #FF6B6B; /* Redefinimos la propiedad | PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (012) */
+main a:visited {
+        /*background-color: #000000; heredado de body */
+        color: #00F5D0; /* Redefinimos la propiedad | PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (001) */
+ul {
+        /* color: #FFFFFFFF; heredado de body */
+        list-style: square; /* PROPIEDAD HEREDABLE */
+        font-weight: bold; /* PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (002) */
+h3 + ol {
+        /* color: #FFFFFFFF; heredado de body */
+        list-style: upper-roman; /* PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (002) */
+ul ol {
+        /* Selecciona la lista ordenada descendiente de la lista no ordenada */
+        /* color: #FFFFFFFF; heredado de body */
+        list-style: lower-latin; /* PROPIEDAD HEREDABLE */
+        font-weight: normal; /* PROPIEDAD HEREDABLE */
+        font-style: italic; /* PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (002) */
+dl > dt {
+        /* color: #FFFFFFFF; heredado de body */
+        font-weight: bold; /* PROPIEDAD HEREDABLE */       
+}
+
+/* Especificidad (002) */
+dl > dd {
+        /* color: #FFFFFFFF; heredado de body */
+        margin-bottom: 2em; /* PROPIEDAD NO HEREDABLE */
+}
+
+/* Especificidad (001) */
+table {
+        /* color: #FFFFFFFF; heredado de body */
+        width: 100%; /* Para que la tabla ocupe el 100% del ancho de la pantalla | PROPIEDAD HEREDABLE */
+        text-align: center; /* Situa el texto de cada celda de la tabla en el centro | PROPIEDAD HEREDABLE */
+        border-collapse: collapse; /* Reducimos los bordes de la tabla a uno | PROPIEDAD HEREDABLE */
+        border: 0.5vmin solid white; /* Dibuja el borde de la tabla | PROPIEDAD NO HEREDABLE */
+}
+
+/* Especificidad (002) */
+th, td {
+        /* color: #FFFFFFFF; heredado de body */
+        border: 0.25vmin solid white; /* Dibuja el borde de cada celda de la tabla | PROPIEDAD NO HEREDABLE */
+        padding: 1vmin; /* Espaciado interno de cada celda | PROPIEDAD NO HEREDABLE */
+}
+
+/* Especificidad (001) */
+video {
+        /*background-color: #000000; heredado de body */
+        /* color: #FFFFFFFF; heredado de body */
+        width:100%; /* PROPIEDAD NO HEREDABLE */
+        height:auto; /* PROPIEDAD NO HEREDABLE */
+}
+
+/* Especificidad (013) */
+header > nav > a.active {
+        color: #990000; /* PROPIEDAD HEREDABLE */
+        font-weight: bold; /* PROPIEDAD HEREDABLE */
+        font-size: 1.2em; /* PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (003) */
+main h4 + p {
+        /* color: #FFFFFFFF; heredado de body */
+        font-weight: normal; /* PROPIEDAD HEREDABLE */
+}
+
+/* Especificidad (002) */
+h3 + div {
+        /* Selector para el mapa dinámico de la ventana circuito */
+        /* color: #FFFFFFFF; heredado de body */
+        padding-top: 2vmin;
+        width: 100%;
+        height: 57vmin;
+}
+
+/* Especificidad (002) */
+img + div {
+        /* Selector para el mapa dinámico de la ventana viajes */
+        /* color: #FFFFFFFF; heredado de body */
+        padding-top: 2vmin;
+        width: 100%;
+        height: 50vh;
+}
+
+/* Especificidad (003) */
+main > nav > a {
+        padding-right: 0.5vh;
+}
+
+/* Especificidad (002) */
+h4 ~ a {
+        padding-right: 1vh;
+}
+
+/* Especificidad (002) */
+h3 + svg {
+        /* Selector para el svg de la ventana circuito */
+        width: 100%;
+        height: 100vh;
+        right: 0%;
+}
+
+/* Especificidad (003) */
+h3 + svg > polyline {
+        /* Selector para la polyline de la ventana circuito */
+        fill: none;
+        stroke: #FFFFFFFF;
+        stroke-width:4;
+}
+
+/* Especificidad (002) */
+h4 + svg {
+        /* Selector para la ventana de Ayrton Senna */
+        display: flex;
+        width: 51.5vh;
+        height: 42vh;
+        justify-content: center;
+        align-items: center;
+}
+
+/* Especificidad (003) */
+h4 + svg > path {
+        /* Selector para el layout del circuito de mónaco de la ventana de Ayrton Senna */
+        stroke: #FFFFFFFF;
+        fill: none;
+        stroke-width:4;
+}
+
+/* Especificidad (002) */
+h5 ~ img {
+        width: 90vw;
+        height: 67vh;
+}
