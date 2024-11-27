@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>F1 Desktop metereologia</title>
+	
+	<meta name ="author" content="Miguel Fernández Huerta" />
+	<meta name="description" content="Documento que recoge la información de la metereología de la F1" />
+	<meta name ="keywords" content ="Metereología,metereología,Tiempo,tiempo" />
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+	<!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+	<link rel="stylesheet" type="text/css" href="estilo/article_elements.css" />
+	<link rel="icon" href="multimedia/imagenes/favicon.ico" />
+
+	<script src="js/pais.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+    	<!-- Datos con el contenidos que aparece en el navegador -->
+    	<h1><a href="index.html" title="Enlace a la página principal">F1 Desktop</a></h1>
+		<nav>
+			<a href="index.html" title="Inicio F1 Desktop">Inicio</a>
+			<a href="piloto.html" title="Pestaña del piloto">Piloto</a>
+			<a href="noticias.html" title="Pestaña de noticias">Noticias</a>
+			<a href="calendario.html" title="Pestaña de calendario">Calendario</a>
+			<a href="meteorologia.html" title="Pestaña de metereologia" class="active">Metereologia</a>
+			<a href="circuito.html" title="Pestaña de circuito">Circuito</a>
+			<a href="php/viajes.php" title="Pestaña de viajes">Viajes</a>
+			<a href="juegos.html" title="Pestaña de juegos">Juegos</a>
+		</nav>
+	</header>
+
+	<!-- Migas -->
+	<p>Estás en: Inicio >> Meteorología</p>
+
+	<main>
+		<h2>Metereología de la F1</h2>
+		<script>
+			var pais = new País("España","Barcelona","1.655.956");
+			pais.cargarInformacion();
+		</script>
+	</main>
+	
+</body>
+</html>
