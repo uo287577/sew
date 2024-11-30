@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>F1 Desktop juegos</title>
+	
+	<meta name ="author" content="Miguel Fernández Huerta" />
+	<meta name="description" content="Documento que recopila información sobre el legendario piloto de la F1 Ayrton Senna" />
+	<meta name ="keywords" content ="Historia,historia,Ayrton,ayrton,Senna,senna" />
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+	<!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+	<link rel="icon" href="multimedia/imagenes/favicon.ico" />
+
+
+	<script src="js/api.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+    	<!-- Datos con el contenidos que aparece en el navegador -->
+    	<h1><a href="index.html" title="Enlace a la página principal">F1 Desktop</a></h1>
+		<nav>
+			<a href="index.html" title="Inicio F1 Desktop">Inicio</a>
+			<a href="piloto.html" title="Pestaña del piloto">Piloto</a>
+			<a href="noticias.html" title="Pestaña de noticias">Noticias</a>
+			<a href="calendario.html" title="Pestaña de calendario">Calendario</a>
+			<a href="meteorologia.html" title="Pestaña de metereologia">Metereologia</a>
+			<a href="circuito.html" title="Pestaña de circuito">Circuito</a>
+			<a href="php/viajes.php" title="Pestaña de viajes">Viajes</a>
+			<a href="juegos.html" title="Pestaña de juegos" class="active">Juegos</a>
+		</nav>
+	</header>
+
+	<!-- Migas -->
+	<p>Estás en: Inicio >> Juegos >> Ayrton Senna: Leyenda de la Fórmula 1</p>
+
+	<main>
+    	<nav>
+			<a href="memoria.html" title="Juego de memoria">Juego de memoria</a>
+			<a href="php/semaforo.php" title="Juego del semáforo">Juego del semáforo</a>
+            <a href="api.html" title="Ayrton Senna: Leyenda de la Fórmula 1">Ayrton Senna: Leyenda de la Fórmula 1</a>
+		</nav>
+
+        <h2>Ayrton Senna: Leyenda de la Fórmula 1</h2>
+		
+		<picture>
+			<source media="(max-width: 465px)" srcset="multimedia/imagenes/Ayrton_Senna-465w.webp">
+			<source media="(max-width: 799px)" srcset="multimedia/imagenes/Ayrton_Senna-799w.webp">
+			<source media="(min-width: 800px)" srcset="multimedia/imagenes/Ayrton_Senna.webp">
+			<img src="multimedia/imagenes/Ayrton_Senna.webp" alt="Imagen del piloto Ayrton Senna" />
+		</picture>
+
+		<section>
+			<h3>Resumen sobre Ayrton Senna</h3>
+
+			<p>Ayrton Senna da Silva (1960-1994) fue mucho más que un piloto de automovilismo brasileño; fue una leyenda de la Fórmula 1 y un héroe nacional en Brasil.</p>
+			<p>Nacido en São Paulo, su pasión por la velocidad comenzó desde muy joven, destacándose en el karting antes de dar el salto a la categoría reina del automovilismo en 1984.</p>
+			<p>Conquistó tres campeonatos mundiales de Fórmula 1 (1988, 1990 y 1991) al volante de McLaren, ganándose el respeto y la admiración de millones gracias a su habilidad única 
+				para conducir bajo la lluvia, su extraordinaria rapidez en las clasificaciones (obtuvo 65 poles position) y su enfoque agresivo y apasionado en las pistas. 
+				Su rivalidad con Alain Prost se convirtió en una de las más icónicas de la historia del deporte.</p>
+			<p>Senna perdió la vida de forma trágica durante el Gran Premio de San Marino en 1994, en el circuito de Imola. Sin embargo, su legado permanece intacto, no solo por su talento al volante, 
+				sino también por su labor humanitaria, que marcó profundamente a su país natal. Su memoria sigue inspirando a nuevas generaciones dentro y fuera de las pistas.</p>
+		</section>
+
+		<section>
+			<h3>La vuelta perfecta</h3>
+
+			<p>El Gran Premio de Mónaco de 1988 puede ser considerado como la luz y sombra de Ayrton Senna. 
+				Muchos recuerdan su actuación el sábado 14 de mayo y una vuelta que se define como perfecta, con la que logró la pole superando a su compañero en McLaren, el francés Alain Prost.</p>
+			<p>El brasileño hizo una vuelta en 1:23.998 que endosó 1,4 segundos al registro del francés (1:25.425), en un día que el cuatro veces campeón del mundo aún tiene en la mente.</p>
+			<p>"Fue muy especial", dijo Prost a la cadena británica. "Pero, si nos fijamos en los tiempos de clasificación cuando estuvimos juntos, eso no ocurrió una sola vez, sino unas tres o cuatro. 
+				Él era mucho más rápido que yo en clasificación, pero un poco menos en condiciones de carrera".</p>
+
+			<h4>¿Sabías que...?</h4>
+			<p>Entre tu posición geográfica y la del circuito de Mónaco aproximadamente hay unos: </p>
+		</section>
+
+		<section>
+			<h3>Cargar fichero</h3>
+			<label>
+				Seleccione el fichero Homenaje.txt para mostrar su contenido:
+				<input type="file">
+			</label>
+		</section>
+
+        <script>
+            var api = new Api();
+        </script>
+        
+	</main>
+
+</body>
+</html>
