@@ -1,0 +1,26 @@
+/* Miguel Fernández Huerta UO287577 */
+
+/* Contiene las reglas para aplicar esquemas de posicionamiento especifico al header con los elementos que contiene (h1 y nav) */
+
+/* Especificidad (001) */
+header {
+    display: flex; /* Hacemos el contenedor header flexible para que se adapte a la pantalla | PROPIEDAD NO HEREDABLE */
+    flex-direction: row; /* Hacemos que la dirección de los contenidos de header sean de fila | PROPIEDAD NO HEREDABLE */
+    justify-content: space-between; /* Para que el h1 se sitúe en el extremo izquierdo de la pantalla y el nav en el extremo derecho | PROPIEDAD NO HEREDABLE */
+    align-items: baseline; /* Para alinear el texto de los contenidos del header entre ellos | PROPIEDAD NO HEREDABLE */
+}
+
+@media screen and (max-width: 733px) {
+    /* Especificidad (001) */
+    header {
+        flex-direction: column; /* La propiedad se está redefiniendo | PROPIEDAD NO HEREDABLE */
+    }
+
+    /* Especificidad (003) */
+    header > nav > a {
+        display: inline-block;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+    }
+}
+
