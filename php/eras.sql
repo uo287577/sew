@@ -1,0 +1,6 @@
+CREATE DATABASE IF NOT EXISTS `eras`;
+CREATE TABLE IF NOT EXISTS `eras`.`motores atmosféricos` (`Circuito` VARCHAR(50) NOT NULL , `Piloto` VARCHAR(40) NOT NULL , `Coche` VARCHAR(40) NOT NULL , `Tiempo` VARCHAR(10) NOT NULL ) ENGINE = InnoDB;
+CREATE TABLE IF NOT EXISTS `eras`.`aspiración mixta` (`Circuito` VARCHAR(50) NOT NULL , `Piloto` VARCHAR(40) NOT NULL , `Coche` VARCHAR(40) NOT NULL , `Tiempo` VARCHAR(10) NOT NULL ) ENGINE = InnoDB;
+CREATE TABLE IF NOT EXISTS `eras`.`motores v10 y v12` (`Circuito` VARCHAR(50) NOT NULL , `Piloto` VARCHAR(40) NOT NULL , `Coche` VARCHAR(40) NOT NULL , `Tiempo` VARCHAR(10) NOT NULL ) ENGINE = InnoDB;
+CREATE TABLE IF NOT EXISTS `eras`.`motores v8` (`Circuito` VARCHAR(50) NOT NULL , `Piloto` VARCHAR(40) NOT NULL , `Coche` VARCHAR(40) NOT NULL , `Tiempo` VARCHAR(10) NOT NULL ) ENGINE = InnoDB;
+CREATE TABLE IF NOT EXISTS `eras`.`motores híbridos` (`Circuito` VARCHAR(50) NOT NULL , `Piloto` VARCHAR(40) NOT NULL , `Coche` VARCHAR(40) NOT NULL , `Tiempo` VARCHAR(10) NOT NULL ) ENGINE = InnoDB;
