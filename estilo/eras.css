@@ -1,0 +1,11 @@
+/* Miguel Fernández Huerta UO287577 */
+
+/* Especificidad (002) */
+p > input {
+    margin-top: 0%;
+}
+
+/* Especificidad (002) | Especificidad (002) */
+section > form, article > form {
+    margin-bottom: 3%;
+}
